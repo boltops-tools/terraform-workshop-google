@@ -4,7 +4,7 @@ In this workshop, we'll create a Google Cloud Storage bucket with Terraform.  Fo
 
 ## Configure Google Cloud
 
-Configure Google Cloud so Terraspace can connect to it. The recommended way is to:
+Configure Google Cloud so Terraform can connect to it. The recommended way is to:
 
 1. set up the `~/.gcp/credentials.json`
 2. set up `GOOGLE_APPLICATION_CREDENTIALS`, `GOOGLE_PROJECT`, `GOOGLE_REGION`, and `GOOGLE_ZONE` environment variables
@@ -44,7 +44,7 @@ Note, it makes use of the `jq` command to grab the `GOOGLE_PROJECT` from the `cr
 
 ## Test Google API Access
 
-To use that GOOGLE_APPLICATION_CREDENTIALS is valid and is working you can use the [boltops-tools/google_check](https://github.com/boltops-tools/google_check) test script to check. Here are the summarized commands:
+To check that GOOGLE_APPLICATION_CREDENTIALS is valid and is working you can use the [boltops-tools/google_check](https://github.com/boltops-tools/google_check) test script to check. Here are the summarized commands:
 
     git clone https://github.com/boltops-tools/google_check
     cd google_check
